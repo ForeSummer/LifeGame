@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Game</title>
+    <script src="static/js/config.js"></script>
+    <link rel="stylesheet" href="static/css/materialize.min.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/materialize.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Life Game</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="main-area" class="col s8">Please Click "START" to Start LifeGame</div>
+            <div id="toolbar" class="col s4 card">
+                <div class="card-title">Options</div>
+                <div class="item-container">
+                    <div class="item-title">Cell Size</div>
+                    <div class="item-content">
+                        <label class="select-label attr-label">
+                            <input type="radio" value="small" name="size" id="small" class="select-input attr-input"/>
+                            <span class="select-text attr-text"><p>Small</p></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="middle" name="size" id="middle" class="select-input attr-input"/>
+                            <span class="select-text attr-text"><p>Middle</p></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="large" name="size" id="large" class="select-input attr-input"/>
+                            <span class="select-text attr-text"><p>Large</p></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-title">Cell Color</div>
+                    <div class="item-content">
+                        <label class="select-label attr-label">
+                            <input type="radio" value="black" name="color" id="black" class="select-input attr-input"/>
+                            <span class="select-text attr-text black"></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="red" name="color" id="red" class="select-input attr-input"/>
+                            <span class="select-text attr-text red"></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="purple" name="color" id="purple" class="select-input attr-input"/>
+                            <span class="select-text attr-text purple"></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="blue" name="color" id="blue" class="select-input attr-input"/>
+                            <span class="select-text attr-text blue"></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="green" name="color" id="green" class="select-input attr-input"/>
+                            <span class="select-text attr-text green"></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="orange" name="color" id="orange" class="select-input attr-input"/>
+                            <span class="select-text attr-text orange"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-title">Grew Speed</div>
+                    <div class="item-content">
+                        <label class="select-label attr-label">
+                            <input type="radio" value="slow" name="speed" id="slow" class="select-input attr-input"/>
+                            <span class="select-text attr-text"><p>Slow</p></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="normal" name="speed" id="normal" class="select-input attr-input"/>
+                            <span class="select-text attr-text"><p>Normal</p></span>
+                        </label>
+                        <label class="select-label attr-label">
+                            <input type="radio" value="fast" name="speed" id="fast" class="select-input attr-input"/>
+                            <span class="select-text attr-text"><p>Fast</p></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-title">Map Size</div>
+                    <div class="item-content">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="map-x" type="text" name="mapx" class="validate">
+                                <label for="X">X</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="map-y" type="text" name="mapy" class="validate">
+                                <label for="Y">Y</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <div class="item-content">
+                        <div class="row">
+                            <div class="input-field col s6 center" id="restart">
+                                <a class="waves-effect waves-light btn">Restart</a>
+                            </div>
+                            <div class="input-field col s6 center" id="stop">
+                                <a class="waves-effect waves-light btn">Stop</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

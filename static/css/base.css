@@ -1,0 +1,147 @@
+.container {
+    margin-top: 25px;
+}
+.card-title {
+    margin: 15px;
+}
+.item-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#main-area {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    position: relative;
+    height: 600px;
+}
+
+.cell-container {
+    position: absolute;
+}
+
+.cell-row {
+    display: block;
+}
+
+.cell {
+    display: inline-block;
+}
+
+.small-row {
+    height: 9px;
+}
+.middle-row {
+    height: 18px;
+}
+.large-row {
+    height: 28px;
+}
+
+.small {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #888;
+    margin-left: -1px;
+}
+.middle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    margin-left: -2px;
+}
+.large {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #888;
+    margin-left: -2px;
+}
+
+.dead {
+    background: transparent;
+}
+.black {
+    background: #212121 !important;
+}
+.red {
+    background: #F44336 !important;
+}
+.purple {
+    background: #7B1FA2 !important;
+}
+.blue {
+    background: #2196F3 !important;
+}
+.green {
+    background: #4CAF50 !important;
+}
+.orange {
+    background: #FF8F00 !important;
+}
+
+.attr-content {
+    display: inline-block;
+    width: 90%;
+    font-size: 0;
+    margin-left: 25%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+.attr-label {
+    display: inline-block;
+    width: 32%;
+    height: 35px;
+    background: rgb(120,120,120);
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.12), 0px 1px 1px rgba(0,0,0,0.24);
+}
+.attr-input  {
+    opacity: 0;
+    position: absolute;
+    z-index: -100;
+    height: 0;
+    width: 0;
+    display: none;
+}
+input[type = radio] + span {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+input[type = radio]:checked + span {
+    background: #3F51B5;
+    color: white;
+    border-radius: 1px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.24), 0px 2px 2px rgba(0,0,0,0.48);
+}
+        
+.attr-text {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.attr-text p {
+    width: 100%;
+    white-space: pre-wrap;
+    word-break: break-all; 
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    -webkit-user-select: none;
+}
+.attr-text:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+.attr-label:hover {
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
